@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kuaichengtianye94-cloud.github.io/motive-lp/sitemap.xml
