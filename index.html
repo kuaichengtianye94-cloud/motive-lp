@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Body design SALON motive 梅田｜植物由来ジェルのオールハンドエステ</title>
+<meta name="description" content="大阪・中津駅1分のプライベートエステ「motive」。植物由来約80%のモティーブジェルを使ったオールハンド施術で、あなた好みのボディデザインへ。痩身・くびれ・フェイシャル・毛穴・脱毛・よもぎ蒸し・ブライダル。">
+<meta property="og:title" content="Body design SALON motive 梅田｜植物由来ジェルのオールハンドエステ">
+<meta property="og:description" content="大阪・中津駅1分のプライベートエステ。植物由来約80%のジェルでオールハンド。痩身くびれ体験¥500〜。">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#3a352f;
+    --gray:#857d72;
+    --gold:#b89b6e;
+    --gold-d:#9c7f52;
+    --line:#e7e0d6;
+    --cream:#faf7f2;
+    --white:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Noto Sans JP",sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.9;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    word-break:auto-phrase;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  .serif{font-family:"Noto Serif JP",serif;}
+  .en{font-family:"Cormorant Garamond",serif;letter-spacing:.08em;}
+
+  /* ===== 大理石テクスチャ ===== */
+  .marble{
+    background-color:#f4f1ec;
+    background-image:
+      linear-gradient(rgba(250,247,242,.55), rgba(250,247,242,.62)),
+      url('marble.jpg');
+    background-size:cover, cover;
+    background-position:center, center;
+  }
+  /* ヒーローは大理石をしっかり見せる */
+  .hero.marble{
+    background-image:
+      linear-gradient(100deg, rgba(249,245,239,.94) 0%, rgba(249,245,239,.70) 38%, rgba(249,245,239,.22) 66%, rgba(249,245,239,.05) 100%),
+      url('hero_notext.jpg');
+    background-size:cover, cover;
+    background-position:center, right center;
+    background-repeat:no-repeat, no-repeat;
+  }
+
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px;}
+  .narrow{max-width:760px;margin:0 auto;}
+
+  /* ===== セクション共通 ===== */
+  section{padding:78px 0;position:relative;}
+  .eyebrow{
+    font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:1.15rem;letter-spacing:.12em;color:var(--gold-d);
+    text-align:center;margin-bottom:6px;
+  }
+  .sec-ttl{
+    font-family:"Noto Serif JP",serif;font-weight:500;
+    font-size:1.6rem;text-align:center;letter-spacing:.06em;
+    margin-bottom:8px;line-height:1.5;
+  }
+  .sec-ttl .sm{font-size:1rem;color:var(--gray);font-weight:400;}
+  .sec-lead{text-align:center;color:var(--gray);font-size:.94rem;margin-bottom:42px;font-weight:300;}
+  .divline{width:46px;height:1px;background:var(--gold);margin:14px auto 26px;}
+
+  /* ===== ヘッダー ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 22px;
+    background:rgba(250,247,242,.82);backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(231,224,214,.7);
+  }
+  header .logo{font-family:"Cormorant Garamond",serif;font-size:1.5rem;letter-spacing:.22em;font-weight:500;color:var(--ink);}
+  header .logo small{display:block;font-family:"Noto Sans JP";font-size:.52rem;letter-spacing:.3em;color:var(--gold-d);margin-top:-2px;}
+  header .h-cta{
+    font-size:.78rem;letter-spacing:.08em;color:#fff;background:var(--gold);
+    padding:9px 18px;border-radius:30px;font-weight:500;
+  }
+
+  /* ===== ヒーロー ===== */
+  .hero{
+    min-height:100svh;display:flex;align-items:center;
+    padding:96px 0 64px;position:relative;
+  }
+  .hero-inner{
+    width:100%;max-width:1080px;margin:0 auto;padding:0 22px;
+  }
+  .hero-copy{text-align:left;max-width:600px;}
+  .hero-eyebrow{
+    font-family:"Cormorant Garamond",serif;font-style:italic;
+    font-size:1.2rem;letter-spacing:.12em;color:var(--gold-d);margin-bottom:10px;
+  }
+  .hero h1{
+    font-family:"Noto Serif JP",serif;font-weight:500;
+    font-size:clamp(1.8rem,5vw,2.9rem);line-height:1.65;letter-spacing:.05em;margin-bottom:22px;
+    text-shadow:0 1px 16px rgba(252,249,245,.95),0 0 4px rgba(252,249,245,.9);
+  }
+  .hero h1 .gold{color:var(--gold-d);}
+  .hero .sub{
+    color:#5d574d;font-weight:400;
+    font-size:clamp(.9rem,2.2vw,1.02rem);line-height:2;margin-bottom:30px;max-width:520px;
+    text-shadow:0 1px 12px rgba(252,249,245,.98),0 0 3px rgba(252,249,245,.95);
+  }
+  .hero .tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-start;margin-bottom:34px;}
+  .hero .tags span{
+    font-size:.74rem;letter-spacing:.06em;color:var(--gold-d);
+    border:1px solid var(--gold);border-radius:30px;padding:6px 15px;background:rgba(255,255,255,.5);
+  }
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:flex-start;}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:15px 30px;border-radius:32px;font-size:.92rem;font-weight:500;letter-spacing:.05em;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-main{background:var(--gold);color:#fff;box-shadow:0 8px 22px rgba(184,155,110,.32);}
+  .btn-line{background:#06C755;color:#fff;box-shadow:0 8px 22px rgba(6,199,85,.25);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);}
+  .btn .sm{font-size:.68rem;opacity:.85;font-weight:400;}
+
+  /* ===== コンセプト ===== */
+  .concept{text-align:center;}
+  .concept .big{
+    font-family:"Noto Serif JP",serif;font-weight:400;font-size:clamp(1.25rem,4.6vw,1.7rem);
+    line-height:2.1;letter-spacing:.05em;margin-bottom:26px;
+  }
+  .concept .big .gold{color:var(--gold-d);}
+  .concept p{color:var(--gray);font-weight:300;font-size:.95rem;}
+
+  /* ===== こだわり ===== */
+  .reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .rcard{
+    background:var(--white);border:1px solid var(--line);border-radius:4px;
+    padding:38px 26px;text-align:center;position:relative;
+  }
+  .rcard .no{
+    font-family:"Cormorant Garamond",serif;font-style:italic;font-size:1.5rem;color:var(--gold);
+    display:block;margin-bottom:10px;
+  }
+  .rcard h3{font-family:"Noto Serif JP",serif;font-weight:500;font-size:1.12rem;letter-spacing:.04em;margin-bottom:12px;line-height:1.6;}
+  .rcard p{color:var(--gray);font-weight:300;font-size:.85rem;line-height:1.9;}
+
+  /* ===== メニュー ===== */
+  .menu-wrap{background:var(--white);}
+  .mcat{margin-bottom:40px;}
+  .mcat:last-child{margin-bottom:0;}
+  .mcat-ttl{
+    display:flex;align-items:center;gap:14px;margin-bottom:18px;
+    font-family:"Noto Serif JP",serif;font-weight:500;font-size:1.15rem;letter-spacing:.05em;
+  }
+  .mcat-ttl::before{content:"";width:26px;height:1px;background:var(--gold);}
+  .mrow{
+    display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+    padding:16px 4px;border-bottom:1px solid var(--line);
+  }
+  .mrow:last-child{border-bottom:none;}
+  .mrow .mi b{font-weight:500;font-size:.98rem;}
+  .mrow .mi span{display:block;font-size:.78rem;color:var(--gray);font-weight:300;margin-top:2px;}
+  .mrow .mp{flex:none;text-align:right;white-space:nowrap;}
+  .mrow .mp b{font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:500;color:var(--gold-d);}
+  .mrow .mp b .yen{font-family:"Noto Sans JP";font-size:.85rem;}
+  .mrow .mp .tag{display:block;font-size:.66rem;color:#fff;background:var(--gold);border-radius:20px;padding:2px 9px;margin-top:4px;letter-spacing:.04em;}
+  .menu-note{margin-top:30px;text-align:center;font-size:.78rem;color:var(--gray);font-weight:300;line-height:1.9;}
+
+  /* ===== お客様の声 ===== */
+  .voices{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .vcard{background:var(--white);border:1px solid var(--line);border-radius:4px;padding:28px 24px;}
+  .vstar{color:var(--gold);letter-spacing:3px;font-size:.85rem;margin-bottom:12px;}
+  .vcard p{font-size:.88rem;font-weight:300;line-height:2;color:#544e46;}
+  .vcard .who{margin-top:16px;font-size:.76rem;color:var(--gray);letter-spacing:.04em;}
+
+  /* ===== Instagram ===== */
+  .ig{text-align:center;}
+  .ig .igh{font-family:"Cormorant Garamond",serif;font-size:1.6rem;letter-spacing:.1em;margin-bottom:6px;}
+  .ig p{color:var(--gray);font-weight:300;font-size:.9rem;margin-bottom:26px;}
+
+  /* ===== 店舗情報 ===== */
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start;}
+  .info-list dl{display:flex;border-bottom:1px solid var(--line);padding:15px 2px;}
+  .info-list dt{flex:none;width:96px;font-weight:500;font-size:.86rem;letter-spacing:.06em;color:var(--gold-d);}
+  .info-list dd{font-size:.88rem;font-weight:300;color:#544e46;line-height:1.8;}
+  .map{width:100%;height:100%;min-height:300px;border:0;border-radius:4px;filter:grayscale(.2) contrast(.96);}
+
+  /* ===== 予約CTA ===== */
+  .cta{text-align:center;color:#fff;position:relative;overflow:hidden;}
+  .cta::before{content:"";position:absolute;inset:0;background:linear-gradient(150deg,#2e2a25 0%,#403930 100%);z-index:0;}
+  .cta .wrap{position:relative;z-index:1;}
+  .cta .eyebrow{color:var(--gold);}
+  .cta h2{font-family:"Noto Serif JP",serif;font-weight:400;font-size:clamp(1.4rem,5vw,2rem);letter-spacing:.06em;margin-bottom:14px;line-height:1.7;}
+  .cta p{color:#d8d0c4;font-weight:300;font-size:.92rem;margin-bottom:34px;}
+  .cta .hero-cta{margin-bottom:30px;justify-content:center;}
+  .cta .tel{font-family:"Cormorant Garamond",serif;font-size:2rem;letter-spacing:.06em;color:#fff;font-variant-numeric:lining-nums tabular-nums;font-feature-settings:"lnum" 1,"tnum" 1;}
+  .cta .tel .yoyaku{display:block;font-family:"Noto Sans JP";font-size:.74rem;letter-spacing:.18em;color:var(--gold);margin-bottom:2px;}
+
+  /* ===== フッター ===== */
+  footer{background:#26221d;color:#a99f90;text-align:center;padding:40px 22px;font-size:.78rem;font-weight:300;}
+  footer .flogo{font-family:"Cormorant Garamond",serif;font-size:1.4rem;letter-spacing:.22em;color:#fff;margin-bottom:8px;}
+  footer .fnav{margin:16px 0;display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
+  footer .fnav a{color:#a99f90;font-size:.78rem;letter-spacing:.05em;}
+  footer .copy{margin-top:14px;opacity:.6;font-size:.68rem;letter-spacing:.05em;}
+
+  /* ===== 固定フッターCTA（スマホ）===== */
+  .fixed-cta{
+    position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+    grid-template-columns:1fr 1fr;gap:0;
+    box-shadow:0 -4px 18px rgba(0,0,0,.1);
+  }
+  .fixed-cta a{padding:15px 0;text-align:center;font-size:.92rem;font-weight:500;letter-spacing:.04em;color:#fff;}
+  .fixed-cta .f-resv{background:var(--gold);}
+  .fixed-cta .f-line{background:#06C755;}
+
+  /* ===== レスポンシブ ===== */
+  @media(max-width:860px){
+    .hero{min-height:86svh;padding:96px 0 56px;}
+    .hero.marble{
+      background-image:linear-gradient(rgba(252,249,245,.74),rgba(252,249,245,.86)),url('hero_notext.jpg');
+      background-size:cover, cover;background-position:center, center 12%;
+    }
+    .hero-copy{text-align:center;max-width:none;}
+    .hero-eyebrow{text-align:center;}
+    .hero .sub{margin-left:auto;margin-right:auto;}
+    .hero .tags{justify-content:center;max-width:300px;margin-left:auto;margin-right:auto;gap:7px;}
+    .hero .tags span{font-size:.68rem;padding:5px 11px;}
+    .hero-cta{justify-content:center;}
+    .reasons{grid-template-columns:1fr;gap:16px;}
+    .rcard{padding:30px 26px;}
+    .voices{grid-template-columns:1fr;}
+    .info-grid{grid-template-columns:1fr;gap:26px;}
+    .map{min-height:240px;}
+    section{padding:60px 0;}
+    .fixed-cta{display:grid;}
+    body{padding-bottom:54px;}
+    header .h-cta{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">motive<small>BODY DESIGN SALON</small></div>
+  <a class="h-cta" href="https://minimodel.jp/r/9211ruH" target="_blank" rel="noopener">ご予約</a>
+</header>
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero marble">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="hero-eyebrow">Body Design Salon</p>
+      <h1>あなた好みの、<br><span class="gold">ボディデザイン</span>へ。</h1>
+      <p class="sub">植物由来 約80% の「モティーブジェル」を使った、心地よさにこだわるオールハンドエステ。大阪・中津のプライベートサロンで、隠れた美しさを引き出します。</p>
+      <div class="tags">
+        <span>中津駅 徒歩1分</span>
+        <span>完全プライベート2席</span>
+        <span>口コミ ★5.0</span>
+        <span>年中無休 10–22時</span>
+      </div>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="https://minimodel.jp/r/9211ruH" target="_blank" rel="noopener">ミニモで予約する<span class="sm">初回¥500〜</span></a>
+        <a class="btn btn-line" href="https://lin.ee/VMAgkdZ" target="_blank" rel="noopener">LINEで相談</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== コンセプト ===== -->
+<section class="concept">
+  <div class="wrap narrow">
+    <p class="eyebrow">Concept</p>
+    <div class="divline"></div>
+    <p class="big">頑張る毎日に、<span class="gold">ご褒美のひととき</span>を。<br>あなたの「なりたい」に、<br>そっと寄り添うサロンです。</p>
+    <p>motive（モティーブ）は、肌にやさしい植物由来のジェルと、ひとつひとつ手で行うオールハンド施術にこだわるプライベートエステ。痩身・くびれづくりからフェイシャル、毛穴ケア、脱毛、よもぎ蒸しまで。お一人おひとりのお悩みに合わせて、丁寧にご提案いたします。</p>
+  </div>
+</section>
+
+<!-- ===== こだわり ===== -->
+<section class="marble">
+  <div class="wrap">
+    <p class="eyebrow">Our Promise</p>
+    <h2 class="sec-ttl">motive が選ばれる理由</h2>
+    <div class="divline"></div>
+    <div class="reasons">
+      <div class="rcard">
+        <span class="no">01</span>
+        <h3>植物由来 約80%の<br>こだわりジェル</h3>
+        <p>肌にやさしい自然派の「モティーブジェル」を使用。敏感肌の方にも心地よく、うるおいを守りながら整えます。</p>
+      </div>
+      <div class="rcard">
+        <span class="no">02</span>
+        <h3>すべて手で行う<br>オールハンド施術</h3>
+        <p>機械任せにしない、ていねいなハンドワーク。時間を忘れるほどの心地よさで、リラックスしながら結果を目指します。</p>
+      </div>
+      <div class="rcard">
+        <span class="no">03</span>
+        <h3>完全プライベートの<br>上質な空間</h3>
+        <p>2席のみの落ち着いたサロン。人目を気にせず、自分だけの特別な時間を過ごしていただけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== メニュー・料金 ===== -->
+<section class="menu-wrap">
+  <div class="wrap narrow">
+    <p class="eyebrow">Menu &amp; Price</p>
+    <h2 class="sec-ttl">メニュー・料金</h2>
+    <p class="sec-lead">まずはお得な初回メニューから、お気軽にお試しください。</p>
+
+    <div class="mcat">
+      <div class="mcat-ttl">痩身・ボディ</div>
+      <div class="mrow">
+        <div class="mi"><b>motive 痩身ジェル くびれ体験</b><span>気になる部分を集中ケア</span></div>
+        <div class="mp"><b><span class="yen">¥</span>500</b><span class="tag">ミニモ限定</span></div>
+      </div>
+      <div class="mrow">
+        <div class="mi"><b>よもぎ蒸し</b><span>体の芯からぽかぽか・巡りケア</span></div>
+        <div class="mp"><b><span class="yen">¥</span>2,200</b><span class="tag">初回限定</span></div>
+      </div>
+    </div>
+
+    <div class="mcat">
+      <div class="mcat-ttl">フェイシャル・毛穴</div>
+      <div class="mrow">
+        <div class="mi"><b>ハーブピーリング</b><span>毛穴・ニキビ・くすみが気になる方へ</span></div>
+        <div class="mp"><b><span class="yen">¥</span>5,500</b><span class="tag">初回限定</span></div>
+      </div>
+      <div class="mrow">
+        <div class="mi"><b>毛穴洗浄</b><span>つるんとなめらかな肌に</span></div>
+        <div class="mp"><b><span class="yen">¥</span>3,300</b></div>
+      </div>
+    </div>
+
+    <div class="mcat">
+      <div class="mcat-ttl">脱毛</div>
+      <div class="mrow">
+        <div class="mi"><b>全身脱毛（30分）</b><span>ハンド施術でやさしく</span></div>
+        <div class="mp"><b><span class="yen">¥</span>6,600</b></div>
+      </div>
+    </div>
+
+    <p class="menu-note">※ 表示はすべて税込です。メニューは一例です。ブライダルエステなど、ご希望に合わせたコースもご用意しております。<br>詳しいメニュー・空き状況はミニモまたはLINEよりご確認ください。</p>
+  </div>
+</section>
+
+<!-- ===== お客様の声 ===== -->
+<section class="marble">
+  <div class="wrap">
+    <p class="eyebrow">Voice</p>
+    <h2 class="sec-ttl">お客様の声</h2>
+    <div class="divline"></div>
+    <div class="voices">
+      <div class="vcard">
+        <div class="vstar">★★★★★</div>
+        <p>痛みもなく、気持ちよくて途中で眠ってしまうほど。施術後は肌がやわらかくなって感動しました。</p>
+        <div class="who">— 30代・フェイシャル</div>
+      </div>
+      <div class="vcard">
+        <div class="vstar">★★★★★</div>
+        <p>接客がとても丁寧で、悩みをしっかり聞いてくれます。通うのが毎回の楽しみになっています。</p>
+        <div class="who">— 20代・痩身</div>
+      </div>
+      <div class="vcard">
+        <div class="vstar">★★★★★</div>
+        <p>一回でも効果を実感できました。プライベートな空間でリラックスできるのも嬉しいです。</p>
+        <div class="who">— 40代・よもぎ蒸し</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Instagram ===== -->
+<section class="ig">
+  <div class="wrap narrow">
+    <p class="eyebrow">Instagram</p>
+    <div class="igh">@motiveosaka</div>
+    <p>施術の様子やキャンペーン情報を発信中。<br>ぜひフォローしてチェックしてください。</p>
+    <a class="btn btn-ghost" href="https://www.instagram.com/motiveosaka" target="_blank" rel="noopener">Instagramを見る</a>
+  </div>
+</section>
+
+<!-- ===== 店舗情報 ===== -->
+<section class="marble">
+  <div class="wrap">
+    <p class="eyebrow">Salon Info</p>
+    <h2 class="sec-ttl">サロン情報</h2>
+    <div class="divline"></div>
+    <div class="info-grid">
+      <div class="info-list">
+        <dl><dt>サロン名</dt><dd>Body design SALON motive（モティーブ）</dd></dl>
+        <dl><dt>住所</dt><dd>〒530-0071<br>大阪府大阪市北区中津3-6-21 S&amp;SⅢ 501</dd></dl>
+        <dl><dt>アクセス</dt><dd>地下鉄・阪急「中津駅」より徒歩1分／大阪・梅田駅より徒歩約13分</dd></dl>
+        <dl><dt>営業時間</dt><dd>10:00 – 22:00（年中無休）</dd></dl>
+        <dl><dt>席数</dt><dd>2席（完全プライベート）</dd></dl>
+        <dl><dt>お支払い</dt><dd>現金／クレジットカード（Visa・Mastercard・JCB 他）／PayPay／楽天ペイ／各種電子マネー</dd></dl>
+        <dl><dt>ご予約</dt><dd>ミニモ・LINE・お電話（06-6136-7650）</dd></dl>
+      </div>
+      <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps?q=大阪府大阪市北区中津3-6-21&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 予約CTA ===== -->
+<section class="cta">
+  <div class="wrap narrow">
+    <p class="eyebrow">Reservation</p>
+    <h2>あなたの「なりたい」を<br>叶えにきてください。</h2>
+    <p>ご予約・ご相談はお気軽に。初回メニューからのご来店も大歓迎です。</p>
+    <div class="hero-cta">
+      <a class="btn btn-main" href="https://minimodel.jp/r/9211ruH" target="_blank" rel="noopener">ミニモで予約する<span class="sm">24時間OK</span></a>
+      <a class="btn btn-line" href="https://lin.ee/VMAgkdZ" target="_blank" rel="noopener">LINEで相談</a>
+    </div>
+    <div class="tel"><span class="yoyaku">お電話でのご予約</span><a href="tel:0661367650">06-6136-7650</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo">motive</div>
+  <div>Body design SALON ｜ 大阪・中津</div>
+  <div class="fnav">
+    <a href="https://minimodel.jp/r/9211ruH" target="_blank" rel="noopener">ご予約（ミニモ）</a>
+    <a href="https://lin.ee/VMAgkdZ" target="_blank" rel="noopener">LINE</a>
+    <a href="https://www.instagram.com/motiveosaka" target="_blank" rel="noopener">Instagram</a>
+    <a href="tel:0661367650">お電話</a>
+  </div>
+  <div class="copy">© Body design SALON motive. All rights reserved.</div>
+</footer>
+
+<!-- スマホ固定CTA -->
+<div class="fixed-cta">
+  <a class="f-resv" href="https://minimodel.jp/r/9211ruH" target="_blank" rel="noopener">ミニモで予約</a>
+  <a class="f-line" href="https://lin.ee/VMAgkdZ" target="_blank" rel="noopener">LINEで相談</a>
+</div>
+
+</body>
+</html>
