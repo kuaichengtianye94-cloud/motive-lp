@@ -36,7 +36,12 @@
   img{max-width:100%;display:block;}
   a{color:inherit;text-decoration:none;}
   .serif{font-family:"Noto Serif JP",serif;}
+  /* 改行の読みやすさ：段落は孤立行を防ぎ、見出しは行長をそろえる */
+  .sec-lead,.concept p,.rcard p,.vcard p,.menu-note,.mrow .mi span,
+  .info-list dd,.cta p,.ig p,.hero .sub{text-wrap:pretty;}
+  .sec-ttl,.rcard h3,.concept .big,.hero h1,.cta h2,.mcat-ttl{text-wrap:balance;}
   .en{font-family:"Cormorant Garamond",serif;letter-spacing:.08em;}
+  .nowrap{white-space:nowrap;}
 
   /* ===== 大理石テクスチャ ===== */
   .marble{
@@ -262,7 +267,7 @@
     <div class="hero-copy">
       <p class="hero-eyebrow">Body Design Salon</p>
       <h1>あなた好みの、<br><span class="gold">ボディデザイン</span>へ。</h1>
-      <p class="sub">植物由来 約80% の「モティーブジェル」を使った、心地よさにこだわるオールハンドエステ。大阪・中津のプライベートサロンで、隠れた美しさを引き出します。</p>
+      <p class="sub">植物由来 約80%の「モティーブジェル」を使った、<br>心地よさにこだわるオールハンドエステ。<br>大阪・中津のプライベートサロンで、<br>隠れた美しさを引き出します。</p>
       <div class="tags">
         <span>中津駅 徒歩1分</span>
         <span>完全プライベート2席</span>
@@ -283,7 +288,7 @@
     <p class="eyebrow">Concept</p>
     <div class="divline"></div>
     <p class="big">頑張る毎日に、<span class="gold">ご褒美のひととき</span>を。<br>あなたの「なりたい」に、<br>そっと寄り添うサロンです。</p>
-    <p>motive（モティーブ）は、肌にやさしい植物由来のジェルと、ひとつひとつ手で行うオールハンド施術にこだわるプライベートエステ。痩身・くびれづくりからフェイシャル、毛穴ケア、脱毛、よもぎ蒸しまで。お一人おひとりのお悩みに合わせて、丁寧にご提案いたします。</p>
+    <p>motive（モティーブ）は、肌にやさしい植物由来のジェルと、ひとつひとつ手で行う<span class="nowrap">オールハンド施術</span>にこだわるプライベートエステ。<span class="nowrap">痩身・くびれづくり</span>から<span class="nowrap">フェイシャル</span>、<span class="nowrap">毛穴ケア</span>、脱毛、<span class="nowrap">よもぎ蒸し</span>まで。お一人おひとりのお悩みに合わせて、丁寧にご提案いたします。</p>
   </div>
 </section>
 
